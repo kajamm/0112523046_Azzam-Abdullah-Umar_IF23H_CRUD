@@ -2,6 +2,7 @@ import express, { Request, Response } from "express";
 import cors from "cors";
 import mahasiswaRoutes from "./routes/mahasiswa.route";
 import mahasiswaDbRoutes from "./routes/mahasiswa-db.route";
+import path from "path";
 
 const app = express();
 
