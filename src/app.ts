@@ -15,6 +15,7 @@ app.use(
 );
 
 app.use(express.json());
+app.use("/uploads", express.static(path.join(process.cwd(), "uploads")));
 
 // Middleware logging sederhana (Pertemuan 2)
 app.use((req: Request, res: Response, next) => {
